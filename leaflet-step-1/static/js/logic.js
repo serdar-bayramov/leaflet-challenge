@@ -25,7 +25,7 @@ var earthquakesUrl = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/
 var platesUrl = "https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json"
 
 // create basemap and overlaymaps
-var baseMaps = {"Satellite": satellitemap, "Greysclale": graymap, "Outdooor": outdoors}
+var baseMaps = {"Satellite": satellitemap, "Greyscale": graymap, "Outdooor": outdoors}
 var overlayMaps = {"Tectonic Plates": tectonicplates, "Earthquakes": earthquakes}
 
 // add layers to the map
@@ -93,8 +93,8 @@ d3.json(earthquakesUrl).then(function(earthquake) {
     legend.onAdd = function (map) {
 
     var div = L.DomUtil.create('div', 'info legend');
-    labels = ['<strong>Categories</strong>'],
-    categ = [ 1,2,3,4,5];
+    label = ['<strong>Categories</strong>'],
+    categ = [1,2,3,4,5];
     var colors = ["#FFA500","#FF8C00","#FF7F50","#FF6347","#FF4500"];
 
     for (var i = 0; i < categ.length; i++) {
@@ -117,7 +117,7 @@ d3.json(earthquakesUrl).then(function(earthquake) {
       // console.log(platedata)
          
         L.geoJson(platedata, {
-          color: "yellow",
+          color: "orange",
           weight: 2
         })
         .addTo(tectonicplates);

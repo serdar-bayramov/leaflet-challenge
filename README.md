@@ -4,7 +4,7 @@
 
 ## In this repository we visualize earthquake and tectonic plates data set on the map. 
 
-There are 3 layers of basemaps, satellite, outdoor and greyscale that can turned on and off independently. 
+There are 3 layers of basemaps, satellite, outdoor and greyscale that can be turned on and off independently. 
 
 To build the visualisations, we use USGS earthquake data set. Visit the [USGS GeoJSON Feed](http://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php) page and pick a data set to visualize. When you click on a data set, for example "All Earthquakes from the Past 7 Days", you will be given a JSON representation of that data. 
 
